@@ -55,6 +55,7 @@ public:
     AP4_Result                 AddEntry(AP4_UI32 sample);
     virtual AP4_Result         InspectFields(AP4_AtomInspector& inspector);
     virtual bool               IsSampleSync(AP4_Ordinal sample);
+    virtual AP4_UI32           GetSyncSampleCount();
     virtual AP4_Result         WriteFields(AP4_ByteStream& stream);
 
 private:

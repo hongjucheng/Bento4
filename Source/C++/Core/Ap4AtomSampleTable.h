@@ -66,6 +66,7 @@ class AP4_AtomSampleTable : public AP4_SampleTable
     // AP4_SampleTable methods
     virtual AP4_Result   GetSample(AP4_Ordinal sample_index, AP4_Sample& sample);
     virtual AP4_Cardinal GetSampleCount();
+    virtual AP4_Cardinal GetSyncSampleCount();
     virtual AP4_SampleDescription* GetSampleDescription(AP4_Ordinal sd_index);
     virtual AP4_Cardinal GetSampleDescriptionCount();
     virtual AP4_Result   GetSampleChunkPosition(AP4_Ordinal  sample_index, 

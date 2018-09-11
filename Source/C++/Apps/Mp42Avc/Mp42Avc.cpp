@@ -333,6 +333,7 @@ main(int argc, char** argv)
     AP4_Debug("Video Track:\n");
     AP4_Debug("  duration: %ld ms\n", video_track->GetDurationMs());
     AP4_Debug("  sample count: %ld\n", video_track->GetSampleCount());
+    AP4_Debug("  sync sample count: %ld\n", video_track->GetSyncSampleCount());
 
     switch (sample_description->GetType()) {
         case AP4_SampleDescription::TYPE_AVC:

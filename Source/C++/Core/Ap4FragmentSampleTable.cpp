@@ -256,6 +256,14 @@ AP4_FragmentSampleTable::GetSampleCount()
 }
 
 /*----------------------------------------------------------------------
+|   AP4_FragmentSampleTable::GetSyncSampleCount
++---------------------------------------------------------------------*/
+AP4_Cardinal AP4_FragmentSampleTable::GetSyncSampleCount()
+{
+    return 0; //FIXME
+}
+
+/*----------------------------------------------------------------------
 |   AP4_FragmentSampleTable::GetSampleDescription
 +---------------------------------------------------------------------*/
 AP4_SampleDescription*

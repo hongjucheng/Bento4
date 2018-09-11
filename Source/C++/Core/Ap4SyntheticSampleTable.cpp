@@ -74,6 +74,15 @@ AP4_SyntheticSampleTable::GetSampleCount()
 }
 
 /*----------------------------------------------------------------------
+|   AP4_SyntheticSampleTable::GetSyncSampleCount
++---------------------------------------------------------------------*/
+AP4_Cardinal 
+AP4_SyntheticSampleTable::GetSyncSampleCount()
+{
+    return 0; //FIXME
+}
+
+/*----------------------------------------------------------------------
 |   AP4_SyntheticSampleTable::GetSampleChunkPosition
 +---------------------------------------------------------------------*/
 AP4_Result   

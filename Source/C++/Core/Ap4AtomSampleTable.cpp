@@ -198,6 +198,16 @@ AP4_AtomSampleTable::GetSampleCount()
     }
 }
 
+AP4_Cardinal
+AP4_AtomSampleTable::GetSyncSampleCount ()
+{
+    if (m_StssAtom) {
+        return m_StssAtom->GetSyncSampleCount();
+    } else {
+        return GetSampleCount();  // If the sync sample box is not present, every sample is a sync sample
+    }
+}
+
 /*----------------------------------------------------------------------
 |   AP4_AtomSampleTable::GetSampleDescription
 +---------------------------------------------------------------------*/

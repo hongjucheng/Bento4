@@ -426,6 +426,15 @@ AP4_Track::GetSampleCount() const
 }
 
 /*----------------------------------------------------------------------
+|   AP4_Track::GetSyncSampleCount
++---------------------------------------------------------------------*/
+AP4_Cardinal
+AP4_Track::GetSyncSampleCount() const
+{
+    return m_SampleTable ? m_SampleTable->GetSyncSampleCount() : 0;
+}
+
+/*----------------------------------------------------------------------
 |   AP4_Track::GetSample
 +---------------------------------------------------------------------*/
 AP4_Result 

@@ -113,6 +113,7 @@ class AP4_Track {
     AP4_UI32     GetWidth() const;      // in 16.16 fixed point
     AP4_UI32     GetHeight() const;     // in 16.16 fixed point
     AP4_Cardinal GetSampleCount() const;
+    AP4_Cardinal GetSyncSampleCount() const;
     AP4_Result   GetSample(AP4_Ordinal index, AP4_Sample& sample);
     AP4_Result   ReadSample(AP4_Ordinal     index, 
                             AP4_Sample&     sample,
