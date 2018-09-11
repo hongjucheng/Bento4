@@ -49,7 +49,7 @@ Setup:
 	mkdir $(OUTPUT_DIR)
     
 # ------- Apps -----------
-ALL_APPS = mp4dump mp4info mp42aac mp42ts aac2mp4 mp4decrypt mp4encrypt mp4edit mp4extract mp4rtphintinfo mp4tag mp4dcfpackager mp4fragment mp4compact mp4split mp4mux avcinfo hevcinfo mp42hevc mp42hls
+ALL_APPS = mp4dump mp4info mp42aac mp42ts aac2mp4 mp4decrypt mp4encrypt mp4edit mp4extract mp4rtphintinfo mp4tag mp4dcfpackager mp4fragment mp4compact mp4split mp4mux avcinfo hevcinfo mp42hevc mp42hls mp42avc
 export ALL_APPS
 
 ##################################################################
@@ -148,6 +148,10 @@ hevcinfo: lib
 mp42hevc: lib
 	$(TITLE)
 	@$(INVOKE_SUBMAKE) -f $(BUILD_ROOT)/Makefiles/Mp42Hevc.mak
+    
+mp42avc: lib
+	$(TITLE)
+	@$(INVOKE_SUBMAKE) -f $(BUILD_ROOT)/Makefiles/Mp42Avc.mak
 
 mp42hls: lib
 	$(TITLE)
